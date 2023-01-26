@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+// nav
+
+.parentNav{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-color: #212529;
+    height: 60px;
+    font-family: 'Poppins', sans-serif;
+
+    ul{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li{
+        list-style: none;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+        padding-left: 50px;
+
+    }
+}
+
+
+.aName{
+    font-size: 30px;
+    font-family: 'Parisienne', cursive;
+}
+
+.iconParent{
+
+    padding-left: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .ul2{
+        color: white;
+    }
+
+    i{
+        font-size: 25px;
+        margin-left: -30px;
+        cursor: pointer;
+        color: white;
+        transition: 0.3s;
+    }
+    .fa-bars{
+        display: none;
+    }
+}
+
+// mobile nav
+
+.mobileParent{
+
+    display: flex;
+    justify-content: end;
+    
+    li{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .mobileParent2{
+        position: fixed;
+        margin-top: 60px;
+        background-color: #212529;
+        height: 100%;
+        padding-bottom: 20px;
+        width: 400px;
+    }
+    .mobileParent4{
+        font-family: 'Poppins', sans-serif;
+        margin-left: 20px;
+        margin-top: 20px;
+
+        li{
+            margin-top: 30px;
+        }
+    }
+
+    .aNameMobile{
+        font-size: 40px;
+        font-family: 'Parisienne', cursive;
+    }
+    
+    .fa-xmark{
+        color: white;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+
+    .mobileParent3{
+        text-align: end;
+    }
+
+    .mobileparentIcon{
+
+        margin-top: 300px;
+
+        ul{
+            display: flex;
+        }
+
+        li{
+            margin-left: 20px;
+        }
+
+        h2{
+            color: white;
+            font-family: 'Parisienne', cursive;
+            margin-left: 20px;
+            
+        }
+    }
+
+}
+
