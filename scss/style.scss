@@ -13,6 +13,7 @@ body{
 
 .parentNav{
     position: fixed;
+    z-index: 10000;
     width: 100%;
     text-align: center;
     justify-content: center;
@@ -85,8 +86,20 @@ body{
 
     display: flex;
     justify-content: end;
-    z-index: 999999;
-    transition: 0.3s;
+    z-index: 10000;
+    display: none;
+    animation: myAni 2s;
+    // transition: 0.3s;
+
+    @keyframes myAni  {
+        from{
+            transform: translate(350px);
+            height: 100%;
+        }
+        to{
+            height: 100%;   
+        }
+    }
     
     li{
         list-style: none;
@@ -175,12 +188,15 @@ body{
         padding-left: 40px;
         transition: 0.3s;
     }
-
-    .fa-moon:hover{
-        transform: rotate(-30deg);
-    }
-    
 }
 
 
+    .blackdiv{
+        background-color: rgba( 0,0,0,0.7);
+        height: 100%;
+        width: 100%;
+        z-index: 1000;
+        position: fixed;
+        display: none;
+    }
 
