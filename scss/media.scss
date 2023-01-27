@@ -8,6 +8,9 @@
     a .fa-instagram{
         display: none;
     }
+    .fa-moon{
+        display: none !important;
+    }
     .aHrefs{
         display: none;
     }     
@@ -30,5 +33,11 @@
     .fa-bars{
         display: block !important;
         margin-right: 10px;
+    }
+    .fa-iMobile{
+        display: block !important;
+    }
+    .mobileParent .fa-xmark {
+        margin-right: 12px;
     }
 }

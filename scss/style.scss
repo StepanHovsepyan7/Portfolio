@@ -7,7 +7,6 @@
 body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 // nav
@@ -18,9 +17,10 @@ body{
     text-align: center;
     justify-content: center;
     display: flex;
-    background-color: #212529;
+    background-color: #14191e;
     height: 60px;
     font-family: 'Poppins', sans-serif;
+    
 
     ul{
         display: flex;
@@ -34,10 +34,18 @@ body{
     }
     
     a{
-        color: white;
+        color: rgba(8,117,72,1);
         text-decoration: none;
         padding-left: 50px;
 
+    }
+
+    .fa-moon{
+        transition: 0.3s;
+    }
+
+    .fa-moon:hover{
+        transform: rotate(-30deg);
     }
 }
 
@@ -50,21 +58,20 @@ body{
 .iconParent{
 
     padding-left: 70px;
-
     display: flex;
     justify-content: center;
     align-items: center;
 
 
     .ul2{
-        color: white;
+        color: rgba(8,117,72,1);
     }
 
     i{
         font-size: 25px;
         margin-left: -30px;
         cursor: pointer;
-        color: white;
+        color: rgba(8,117,72,1);
         transition: 0.3s;
     }
     .fa-bars{
@@ -78,6 +85,8 @@ body{
 
     display: flex;
     justify-content: end;
+    z-index: 999999;
+    transition: 0.3s;
     
     li{
         list-style: none;
@@ -85,14 +94,14 @@ body{
 
     a{
         text-decoration: none;
-        color: white;
+        color: rgba(8,117,72,1);
         font-size: 20px;
     }
 
     .mobileParent2{
         position: fixed;
         margin-top: 60px;
-        background-color: #212529;
+        background-color: #14191e;
         height: 100%;
         padding-bottom: 20px;
         width: 400px;
@@ -107,15 +116,32 @@ body{
         }
     }
 
+    .addressParent{
+        color: rgba(8,117,72,1);
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+
+
+        .add{
+            font-size: 40px;
+            font-family: 'Parisienne', cursive;
+
+        }
+    }
+
     .aNameMobile{
         font-size: 40px;
+        display: flex;
         font-family: 'Parisienne', cursive;
     }
     
     .fa-xmark{
-        color: white;
+        color: rgba(8,117,72,1);
         font-size: 30px;
         margin-right: 20px;
+        cursor: pointer;
     }
 
     .mobileParent3{
@@ -124,7 +150,7 @@ body{
 
     .mobileparentIcon{
 
-        margin-top: 300px;
+        margin-top: 190px;
 
         ul{
             display: flex;
@@ -132,15 +158,29 @@ body{
 
         li{
             margin-left: 20px;
+            padding-top: 20px;
         }
 
         h2{
-            color: white;
+            color: rgba(8,117,72,1);
             font-family: 'Parisienne', cursive;
             margin-left: 20px;
             
         }
     }
 
+    .fa-moon{
+        font-size: 30px;
+        padding-top: 10px;
+        padding-left: 40px;
+        transition: 0.3s;
+    }
+
+    .fa-moon:hover{
+        transform: rotate(-30deg);
+    }
+    
 }
+
+
 
